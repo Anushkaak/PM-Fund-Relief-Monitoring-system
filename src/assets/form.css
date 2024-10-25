@@ -1,0 +1,190 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url('./form.jpeg'); */
+    background-image: url('./5.jpg');
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.container
+{
+    padding: 10px 30px;
+    background: #fff;
+    border-top: 4px solid #0245A3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container .form 
+{
+    padding: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container .form h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0245A3;
+    font-size: 24px;
+}
+
+.container .form .box
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.container .form .box input {
+    text-align: left;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    outline: none;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.container .form .box button
+{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="email"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: black;
+}
+
+/* Payment Method Section */
+.payment-method {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.payment-method label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Card Details Section */
+.card-details {
+    margin-top: 10px;
+}
+
+.card-details input {
+    margin-top: 10px;
+}
+
+/* QR Code Section */
+.qr-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.qr-section h3 {
+    font-size: 20px;
+    color: #0245A3;
+    margin-bottom: 10px;
+}
+
+/* Payment Form */
+.payment-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.payment-form h3 {
+    font-size: 20px;
+    color: #0245A3;
+    margin-bottom: 15px;
+}
+
+.payment-form .StripeElement {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.payment-form button {
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.payment-form button:hover {
+    background-color: #218838;
+}
+
+.payment-form .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container .form {
+        padding: 20px;
+    }
+
+    .container .form .box input, .container .form .box button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .payment-form .StripeElement {
+        width: 100%;
+    }
+
+    .card-details input {
+        width: 100%;
+    }
+}
